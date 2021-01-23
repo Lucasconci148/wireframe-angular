@@ -1,0 +1,21 @@
+<div style="padding: 24px; background-color: lightgray; display: flex; flex-direction: row; justify-content: space-between;
+color: white">
+    <div>LOGO!</div>
+    <div style="display: flex; flex-direction: row;" class="nav-items">
+       <div class="item">¿Que hacemos?</div>
+       <div class="item">¿Quienes somos?</div>
+       <div class="item">Contacto</div>
+    </div>
+
+    <div class="icon" style="display: none;" (click)="openMenu()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon>
+    </div>
+</div>
+
+<div class="mobile-menu" [class.hidden]="!showMenu">
+    <div class="item-menu">¿Que hacemos?</div>
+    <div class="item-menu">¿Quienes somos?</div>
+    <div class="item-menu">Contacto</div>
+</div>
+
+<div class="overlay" [class.hidden]="!showMenu" (click)="clickOverlay()"></div>
