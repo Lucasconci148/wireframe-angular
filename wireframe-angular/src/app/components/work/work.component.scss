@@ -1,0 +1,35 @@
+@import '../../../styles.scss';
+
+.container-general {
+    text-align: center;
+    background-color: $grayscale-0;
+}
+.container-circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-circle {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.circle {
+    height: 250px;
+    width: 250px;
+    background: $grayscale-1;
+    border-radius: 50%;
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    padding-top: 100px;
+}
+h1 {
+    color: $grayscale-3;
+    font-weight: 500;
+    font-size: 30px;
+}

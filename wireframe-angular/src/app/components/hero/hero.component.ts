@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'hero',
