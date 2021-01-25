@@ -1,0 +1,17 @@
+@import '../../../styles.scss';
+
+.carousel {
+    color: $white-color;
+}
+.container-general {
+    position: relative;
+    text-align: center;
+    padding: 200px 150px 100px;
+}
+.container-titulo {
+    text-align: left;
+}
+h1 {
+    font-weight: 500;
+    font-size: 35px;
+}
