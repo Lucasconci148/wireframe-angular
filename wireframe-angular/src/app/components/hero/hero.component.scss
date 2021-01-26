@@ -4,17 +4,48 @@
     color: $white-color;
 }
 
-.container-general {
-    position: relative;
-    text-align: center;
-    padding: 200px 150px 100px;
-}
-
 .container-titulo {
+    position: absolute;
     text-align: left;
+    z-index:1;
+    margin-left: 380px;
+    margin-top: 250px;
 }
 
 h1 {
     font-weight: 500;
     font-size: 35px;
+    color: $white-color;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container-titulo {
+        padding: 0px 0px 0px;
+        margin-top: 30px;
+        margin-left: 120px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .container-titulo {
+        padding: 0px 0px 0px;
+        margin-left: 60px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+
+    .container-titulo {
+        display: none;
+    }
 }
