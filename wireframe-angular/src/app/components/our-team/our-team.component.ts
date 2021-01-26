@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 
 export class OurTeamComponent {
 
- 
+  public team = [
+    { title: '', description: '', img: ''},
+    { title: '', description: '', img: ''},
+    { title: '', description: '', img: ''},
+    { title: '', description: '', img: ''},
+  ];
 }

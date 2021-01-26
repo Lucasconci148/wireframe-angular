@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'hero',
@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 
 export class HeroComponent {
 
-  slides = [{'image': '../../../assets/imagen.jpg'},{'image': '../../../assets/imagen.jpg'},{'image': '../../../assets/imagen.jpg'}];
+  @Input() proportion: number;
+
+  public slides = [
+    {'image': '../../../assets/imagen.jpg'},
+    {'image': '../../../assets/imagen.jpg'},
+    {'image': '../../../assets/imagen.jpg'}
+  ];
 }
