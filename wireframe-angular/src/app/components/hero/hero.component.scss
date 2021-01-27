@@ -1,5 +1,52 @@
 @import '../../../styles.scss';
 
+.container-coverpage {
+    background-image: url('../../../assets/imagen.jpg');
+    //background-size: cover;
+    //-o-background-size: cover;
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+    //color: rgb(73, 70, 67);
+    //min-height: 600px;
+    min-height: 100%;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+}
+
+.container-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 150px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 35px;
+    color: $white-color;
+}
+
+@media screen and (max-width: 500px) {
+    .container-coverpage {
+        min-height: 50%;
+    }
+
+    .container-titulo {
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 20px;
+        color: $white-color;
+    }
+}
+
+
+/*
 .carousel {
     color: $white-color;
 }
@@ -49,3 +96,4 @@ h1 {
         display: none;
     }
 }
+*/
