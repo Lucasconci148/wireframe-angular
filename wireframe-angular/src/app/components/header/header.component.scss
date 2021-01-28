@@ -20,6 +20,11 @@
     text-transform: uppercase;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .item-menu {
     margin: 24px;
 }
@@ -37,6 +42,8 @@
     transition: transform 0.35s;
     width: 280px;
     z-index: 3;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .mobile-menu.hidden {
@@ -45,6 +52,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
     .nav-items {
         display: none !important;
     }
@@ -52,5 +60,8 @@
     .icon {
         display: block !important;
     }
+
+    a {
+        color: gray;
+    }
 }
-  

@@ -2,9 +2,9 @@
 color: white">
     <div>LOGO</div>
     <div style="display: flex; flex-direction: row;" class="nav-items">
-       <div class="item">¿Que hacemos?</div>
-       <div class="item">¿Quienes somos?</div>
-       <div class="item">Contacto</div>
+       <div class="item"><a href="#que-hacemos">¿Que hacemos?</a></div>
+       <div class="item"><a href="#quienes-somos">¿Quienes somos?</a></div>
+       <div class="item"><a href="#contacto">Contacto</a></div>
     </div>
 
     <div class="icon" style="display: none;" (click)="openMenu()">
@@ -13,9 +13,9 @@ color: white">
 </div>
 
 <div class="mobile-menu" [class.hidden]="!showMenu">
-    <div class="item-menu">¿Que hacemos?</div>
-    <div class="item-menu">¿Quienes somos?</div>
-    <div class="item-menu">Contacto</div>
+    <div class="item-menu"><a href="#que-hacemos">¿Que hacemos?</a></div>
+    <div class="item-menu"><a href="#quienes-somos">¿Quienes somos?</a></div>
+    <div class="item-menu"><a href="#contacto">Contacto</a></div>
 </div>
 
 <div class="overlay" [class.hidden]="!showMenu" (click)="clickOverlay()"></div>
