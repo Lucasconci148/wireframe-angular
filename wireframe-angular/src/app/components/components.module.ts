@@ -5,7 +5,8 @@ import { HeroComponent } from './hero/hero.component';
 import { WorkComponent } from './work/work.component';
 import { MatIconModule } from '@angular/material/icon';
 import { OurTeamComponent } from './our-team/our-team.component';
-import { MatCarouselModule } from '@ngmodule/material-carousel'
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel'
     HeaderComponent,
     OurTeamComponent,
     HeroComponent,
-    WorkComponent
+    WorkComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel'
     HeaderComponent,
     OurTeamComponent,
     HeroComponent,
-    WorkComponent
+    WorkComponent,
+    ContactComponent
   ]
 })
 
