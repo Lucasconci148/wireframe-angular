@@ -19,4 +19,5 @@ import { ViewsModule } from './views/view.module';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

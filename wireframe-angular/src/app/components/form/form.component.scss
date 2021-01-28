@@ -1,0 +1,80 @@
+@import '../../../styles.scss';
+
+.container-form {
+    background-color: $grayscale-0;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+form {
+    margin: 0 auto;
+    width: 350px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    background-color: gray;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+form li + li {
+    margin-top: 1em;
+}
+
+input,
+textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+    Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1.2em sans-serif;
+
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+}
+
+textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+}
+
+button {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        width: 250px;
+    }
+
+    input,
+    textarea {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+}
