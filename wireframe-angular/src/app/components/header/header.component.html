@@ -13,9 +13,9 @@ color: white">
 </div>
 
 <div class="mobile-menu" [class.hidden]="!showMenu">
-    <div class="item-menu"><a href="#que-hacemos">¿Que hacemos?</a></div>
-    <div class="item-menu"><a href="#quienes-somos">¿Quienes somos?</a></div>
-    <div class="item-menu"><a href="#contacto">Contacto</a></div>
+    <div class="item-menu"><a href="#que-hacemos" (click)="closedMenu()">¿Que hacemos?</a></div>
+    <div class="item-menu"><a href="#quienes-somos" (click)="closedMenu()">¿Quienes somos?</a></div>
+    <div class="item-menu"><a href="#contacto" (click)="closedMenu()">Contacto</a></div>
 </div>
 
 <div class="overlay" [class.hidden]="!showMenu" (click)="clickOverlay()"></div>

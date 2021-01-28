@@ -17,4 +17,9 @@ export class HeaderComponent {
   openMenu() {
     this.showMenu = true;
   }
+
+  closedMenu() {
+    this.showMenu = false;
+  }
+  
 }
